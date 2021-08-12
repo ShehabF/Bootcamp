@@ -5,13 +5,7 @@ import { useState } from 'react';
 
 function App() {
   const [buttonPopup, setButtonPopup] = useState(false);
-  const [data, setData] = useState(null);
 
-  function getData(val)
-  {
-    setData(val.target.value)
-    console.warn(val.target.value)
-  }
   return (
     <div className="App">
       <main>
@@ -24,7 +18,7 @@ function App() {
           <br></br>
           <br></br>
           <p1>Recipe Name: </p1>
-          <input type="text" name="Recipe Name" onChange={getData}/>
+          <input type="text" name="Recipe Name"/>
           <br></br>
           <br></br>
           <p2>Recipe Instructions: </p2>
